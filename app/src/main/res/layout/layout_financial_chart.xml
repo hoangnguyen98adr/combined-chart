@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141826"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvAnnualFinancial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_btn"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Annual"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvQuarterly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_btn"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Quarterly"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/cbFinancialChart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance Sheet"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/tvAnnualBalanceSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_btn"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Annual"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvQuarterlyBalanceSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_btn"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Quarterly"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/cbBalanceSheetChart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="26dp"
+        android:layout_height="150dp" />
+
+</LinearLayout>
